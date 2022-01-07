@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: aliceblue;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes Blink-Post {
+  50% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  70%{
+    color:rgba(255, 255, 255, 0.5);
+  }
+  100%{
+    color:rgba(255, 255, 255,1.658);
+  }
+}
+
+.post{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #282c34;
+  font-size: 35px;
+  animation: Blink-Post 2.0s infinite;
+}
+
